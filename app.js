@@ -31,13 +31,13 @@ app.get('/', function(req, res) {
 
 app.get('/:operation/:inputOne/:inputTwo', function(req, res) {
   if (req.params.operation === 'add') {
-    res.sendStatus(parseInt(req.params.inputOne) + parseInt(req.params.inputTwo));
+    res.sendStatus(parseFloat(req.params.inputOne) + parseInt(req.params.inputTwo));
   } else if (req.params.operation === 'sub') {
-    res.sendStatus(parseInt(req.params.inputOne) - parseInt(req.params.inputTwo));
+    res.sendStatus(parseFloat(req.params.inputOne) - parseInt(req.params.inputTwo));
   } else if (req.params.operation === 'mult') {
-    res.sendStatus(parseInt(req.params.inputOne) * parseInt(req.params.inputTwo));
+    res.sendStatus(parseFloat(req.params.inputOne) * parseInt(req.params.inputTwo));
   } else if (req.params.operation === 'div') {
-    res.sendStatus(parseInt(req.params.inputOne) / parseInt(req.params.inputTwo));
+    res.sendStatus(parseFloat(req.params.inputOne) / parseInt(req.params.inputTwo));
   } else {
     res.send("error");
   }
