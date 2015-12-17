@@ -1,0 +1,19 @@
+{
+  "name": "express-calculator",
+  "version": "1.0.0",
+  "description": "basic calculator using Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alyaazizzaman/express-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alyaazizzaman/express-calculator/issues"
+  },
+  "homepage": "https://github.com/alyaazizzaman/express-calculator#readme"
+}
